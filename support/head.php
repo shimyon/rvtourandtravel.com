@@ -1,4 +1,3 @@
-<script data-ad-client="ca-pub-6387640741458893" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <base href="http://www.rvtourandtravel.com/" />
 
 <!-- Mobile Specific Meta -->

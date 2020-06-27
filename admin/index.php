@@ -145,7 +145,7 @@ $(function() {
 	  			else
 	  			{
 	  				this.novalid = true;
-	  				setTimeout(() => {\
+	  				setTimeout(() => {
 						this.novalid = false;
 	  				}, 3000);
 	  			}

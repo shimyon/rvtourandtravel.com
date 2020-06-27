@@ -21,6 +21,9 @@
       <li class="nav-item">
         <a class="nav-link" href="./admin/Calendar.php">Calendar</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./admin/Packages.php">Packages</a>
+      </li>
      <!--  <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown06" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
         <div class="dropdown-menu" aria-labelledby="dropdown06">
