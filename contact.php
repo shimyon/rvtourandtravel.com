@@ -29,7 +29,8 @@
 			<section class="contact-page-area section-gap">
 				<div class="container">
 					<div class="row">
-						<div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>
+						<!-- <div class="map-wrap" style="width:100%; height: 445px;" id="map"></div> -->
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.6186703299824!2d73.15076652916578!3d22.33569863956764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8e40b63a309%3A0x38f8c58ed1df12be!2sDattar%20Complex%2C%20Gorwa%20Rd%2C%20Nav%20Durga%20Society%2C%20Panchvati%2C%20Vadodara%2C%20Gujarat%20390016!5e0!3m2!1sen!2sin!4v1593253092094!5m2!1sen!2sin" height="450" frameborder="0" style="border:0; width: 100%; margin-bottom: 50px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 						<div class="col-lg-4 d-flex flex-column address-wrap">
 							<div class="single-contact-address d-flex flex-row">
 								<div class="icon">

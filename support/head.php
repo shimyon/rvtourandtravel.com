@@ -30,3 +30,19 @@ CSS
 <link rel="stylesheet" href="./css/animate.min.css">
 <link rel="stylesheet" href="./css/owl.carousel.css">				
 <link rel="stylesheet" href="./css/main.css">
+<style type="text/css">
+	#logo img {
+	 	transform: rotateY(45deg);
+	  	animation: two 2s infinite;
+	  	animation-direction: alternate;
+	}
+
+	@keyframes two {
+	  0% {
+	    transform: rotateY(0);
+	  }
+	  100% {
+	    transform: rotateY(89deg);
+	  }
+	}
+</style>
