@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
 		<?php include('support/head.php'); ?>
@@ -34,9 +34,25 @@
 						</div>
 						<div class="col-lg-6 info-right">
 							<h6>About Us</h6>
-							<h1>Who We Are?</h1>
+							<h1>Brief Company Information</h1>
 							<p>
-								Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+								Our company place great importance on operating staff and transportation. Using the high qualities and placing tour guide efficiently well organising scheduling system which enable to maximize our customer ‘s convince
+								Our company RV Tours and Travel was established on April’2017. Formerly known as Ambe Travels which was established on August’2014.
+								License holder of EDPL group of companies (Govt. Approved)
+								We are into various services </p>
+								<ul>
+									<li>Government department as a contract/tender.</li>
+									<li>Government car rental service and LTC service.</li>
+									<li>All Tour Packages of domestic and international Corporate and commercial.</li>
+									<li> Car rental service for wedding, corporate, local etc.</li>
+									<li>Air Ticket (IATA)</li>
+									<li>Railway Ticket (IRCTC. Govt. Approved).</li>
+									<li>Booking – Hotels Corporate parties, conference meeting, birthday parties, wedding.</li>
+									<li>Travel Insurance and Forex exchange.</li>
+								</ul>
+
+							<p>
+								We want to give our best services and nothing less. Allow us this opportunities to present our company profile in more details so that you may get to know us better.
 							</p>
 						</div>
 					</div>

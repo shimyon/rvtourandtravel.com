@@ -29,7 +29,7 @@
             <nav id="nav-menu-container">
             <ul class="nav-menu">
                 <li><a href="index.php">Home</a></li>
-                <!-- <li><a href="about.php">About</a></li> -->
+                <li><a href="about.php">About</a></li> 
                 <li><a href="calendar.php">Calendar</a></li>
                 <li><a href="packages.php">Packages</a></li>
                 <li><a href="gallery.php">Gallery</a></li>
