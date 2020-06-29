@@ -40,7 +40,7 @@
 				
 			} else {
 				
-				$sql = "INSERT INTO Calendar (Duration,Date,AirPort,Extras,PricePerPerson) 
+				$sql = "INSERT INTO Packages	 (Duration,Date,AirPort,Extras,PricePerPerson) 
 				VALUES ('$Duration','$Date','$AirPort', '$Extras', '$PricePerPerson')";
 			}
 			$returnval = $GLOBALS['conn']->query($sql);
