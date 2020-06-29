@@ -19,16 +19,23 @@
         $FlightAdults = $_POST["FlightAdults"];
         $FlightStart = $_POST["FlightStart"];
         $FlightReturn = $_POST["FlightReturn"];
+        $Child = isset($_POST["Child"]) ? $_POST["Child"] : '';
+        $Place = isset($_POST["Place"]) ? $_POST["Place"] : '';
+        $HotelName = isset($_POST["HotelName"]) ? $_POST["HotelName"] : '';
         $message ='<table style="width:100%">
                 <tr>
-                    <td>'.$subject.'</td>
+                    <td>Search '.$subject.'</td>
                 </tr>
-                <tr><td>Flight From: ' . $FlightFrom . '</td></tr>
-                <tr><td>Flight To: ' . $FlightTo . '</td></tr>
-                <tr><td>Flight Adults: ' . $FlightAdults . '</td></tr>                            
-                <tr><td>Flight Start: ' . $FlightStart . '</td></tr>                            
-                <tr><td>Flight Return: ' . $FlightReturn . '</td></tr>
+                <tr><td>' . $subject . ' From: ' . $FlightFrom . '</td></tr>
+                <tr><td>' . $subject . '  To: ' . $FlightTo . '</td></tr>
+                <tr><td>' . $subject . '  Adults: ' . $FlightAdults . '</td></tr>                            
+                <tr><td>' . $subject . '  Start: ' . $FlightStart . '</td></tr>                            
+                <tr><td>' . $subject . '  Return: ' . $FlightReturn . '</td></tr>
+                <tr><td>' . $subject . '  Child: ' . $Child . '</td></tr>
+                <tr><td>' . $subject . '  Place: ' . $Place . '</td></tr>
+                <tr><td>' . $subject . '  Name: ' . $HotelName . '</td></tr>
             </table>';
+
     } else {
         $name = $_POST["name"];        
         $text = $_POST["message"];

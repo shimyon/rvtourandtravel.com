@@ -50,24 +50,24 @@
 							  </div>
 							  <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">
 								<div class="form-wrap">
-									<input type="text" class="form-control" name="name" placeholder="From " id ="HotelName" onfocus="this.placeholder = ''" onblur="this.placeholder = 'From '">									
-									<input type="text" class="form-control" name="to" placeholder="To " id ="Hotelto" onfocus="this.placeholder = ''" onblur="this.placeholder = 'To '">
+									<input type="text" class="form-control" name="Email" id ="HotelEmail" placeholder="Email " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email '">	
+									<input type="text" class="form-control" name="HotelName"id ="HotelName"  placeholder="Hotel Name " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Hotel Name '">				
 									<input type="text" class="form-control date-picker" name="start" placeholder="Start " id ="HotelStart"onfocus="this.placeholder = ''" onblur="this.placeholder = 'Start '">
 									<input type="text"id ="HotelReturn" class="form-control date-picker" name="return" placeholder="Return " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Return '">
 									<input type="number" min="1" max="20"id ="HotelAdults" class="form-control" name="adults" placeholder="Adults " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adults '">
 									<input type="number" min="1" max="20" class="form-control"id ="HotelChild" name="child" placeholder="Child " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Child '">						
-									<a href="#" class="primary-btn text-uppercase">Search Hotels</a>									
+									<button onclick="sendMail()" class="primary-btn text-uppercase">Search Hotels</button>										
 								</div>							  	
 							  </div>
 							  <div class="tab-pane fade" id="holiday" role="tabpanel" aria-labelledby="holiday-tab">
 								<div class="form-wrap">
-									<input type="text" class="form-control" name="name" placeholder="From " id ="HolidayFrom" onfocus="this.placeholder = ''" onblur="this.placeholder = 'From '">									
-									<input type="text" class="form-control" name="to" placeholder="To "id ="HolidayTo"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'To '">
+									<input type="text" class="form-control" name="Email" id ="HolidayEmail" placeholder="Email " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email '">	
+									<input type="text" class="form-control" name="Plcace"id ="HolidayPlace"  placeholder="Place " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Place '">								
 									<input type="text" class="form-control date-picker" name="start"id ="HolidayStart"  placeholder="Start " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Start '">
 									<input type="text" class="form-control date-picker" name="return" id ="HolidayReturn" placeholder="Return " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Return '">
 									<input type="number" min="1" max="20" class="form-control" name="adults"id ="HolidayAdults"  placeholder="Adults " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adults '">
 									<input type="number" min="1" max="20" class="form-control" name="child"id ="HolidayChild" placeholder="Child " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Child '">							
-									<a href="#" class="primary-btn text-uppercase">Search Holidays</a>									
+									<button onclick="sendMail()" class="primary-btn text-uppercase">Search Places</button>									
 								</div>							  	
 							  </div>
 							</div>
@@ -327,14 +327,18 @@
 				else if ($("#hotel-tab").hasClass("active")) 
 				{
 					sel = "Hotel";
+					data.Child = $("#" + sel + "Child").val();
+					data.HotelName = $("#" + sel + "Name").val();
 				}
 				else if ($("#holiday-tab").hasClass("active")) 
 				{
 					sel = "Holiday";
+					data.Child = $("#" + sel + "Child").val();
+					data.Place = $("#" + sel + "Place").val();
 				}
 
 
-				data.subject = "Search " + sel;
+				data.subject = sel;
 				data.email = $("#" + sel + "Email").val();
 				data.FlightFrom = $("#" + sel + "From").val();
 				data.FlightTo = $("#" + sel + "To").val();
