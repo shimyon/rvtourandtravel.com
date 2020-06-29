@@ -319,17 +319,44 @@
 			function sendMail() {
 				var data ={};
 				data.action = "search";
-				data.subject = "Search Flight"
-				data.email = $("#FlightEmail").val();
-				data.FlightFrom = $("#FlightFrom").val();
-				data.FlightTo = $("#FlightTo").val();
-				data.FlightAdults = $("#FlightAdults").val();
-				data.FlightStart = $("#FlightStart").val();
-				data.FlightReturn = $("#FlightReturn").val();
+				var sel = "Flight";
+				if ($("#flight-tab").hasClass("active")) 
+				{
+					sel = "Flight";
+				}
+				else if ($("#hotel-tab").hasClass("active")) 
+				{
+					sel = "Hotel";
+				}
+				else if ($("#holiday-tab").hasClass("active")) 
+				{
+					sel = "Holiday";
+				}
 
-				$.post("mail.php", data, function(d, status){
-					alert("Data: " + d + "\nStatus: " + status);
-				});
+
+				data.subject = "Search " + sel;
+				data.email = $("#" + sel + "Email").val();
+				data.FlightFrom = $("#" + sel + "From").val();
+				data.FlightTo = $("#" + sel + "To").val();
+				data.FlightAdults = $("#" + sel + "Adults").val();
+				data.FlightStart = $("#" + sel + "Start").val();
+				data.FlightReturn = $("#" + sel + "Return").val();
+				$.ajax({
+		            url: GlobalConfig.RemoteUrl + 'mail.php',
+		            method: 'POST',
+		            dataType: "json",
+		            data: data,
+        			//dataType: "jsonp",
+		            success: function (d) {
+		                //alert("Data: " + d);
+		                if (d.ok) {
+		                	alert("We received your request, we will update you soon!");
+		                }
+		            },
+		            error: function (error) {
+		                console.log(error);
+		            }
+		        });	
 			}
 		</script>
 	</body>

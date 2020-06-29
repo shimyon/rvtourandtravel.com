@@ -1,4 +1,8 @@
 <?php
+    header("Access-Control-Allow-Origin: *");
+    header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
+    header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
+    header ("Access-Control-Expose-Headers: Content-Length, X-JSON");
     //ini_set("SMTP","smtp.gmail.com" );
     //ini_set("smtp_port","25");
     // ini_set('sendmail_from', 'shimyonscrumbees@gmail.com');       
@@ -39,16 +43,20 @@
         </table>';
     }
 
-    // $headers = 'MIME-Version: 1.0' . "\r\n";
-    // $headers .= "From: " . $email . "\r\n"; // Sender's E-mail
-    // $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+    $headers = 'MIME-Version: 1.0' . "\r\n";
+    $headers .= "From: " . $email . "\r\n"; // Sender's E-mail
+    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+    //$headers .= 'Cc: rvtoursandtravels00@gmail.com' . "\r\n";
+    //$headers .= 'Bcc: rvtoursandtravels00@gmail.com' . "\r\n";
+    //rvtoursandtravels00@gmail.com
 
     //if (mail($to, $email, $message, $headers))
-    if (mail($to, $subject, $message))
+    $return = array('ok' => true, 'msg' => '');
+    $return['msg'] = mail($to, $subject, $message, $headers);
+    if (!$return['msg'])
     {
-        echo 'Your message has been sent.';
-    }else{
-        echo 'failed';
-    }
+        $return['ok'] = false;
+    } 
+    echo json_encode($return);
 
 ?>
