@@ -14,6 +14,7 @@
     $subject = $_POST["subject"];
 
     if (isset($_POST['action']) && $_POST['action'] == 'search') {
+        $Phone = $_POST["phone"];
         $FlightFrom = $_POST["FlightFrom"];
         $FlightTo = $_POST["FlightTo"];
         $FlightAdults = $_POST["FlightAdults"];
@@ -26,6 +27,7 @@
                 <tr>
                     <td>Search '.$subject.'</td>
                 </tr>
+                <tr><td>Phone: ' . $Phone . '</td></tr>
                 <tr><td>' . $subject . ' From: ' . $FlightFrom . '</td></tr>
                 <tr><td>' . $subject . '  To: ' . $FlightTo . '</td></tr>
                 <tr><td>' . $subject . '  Adults: ' . $FlightAdults . '</td></tr>                            

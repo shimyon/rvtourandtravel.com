@@ -104,7 +104,7 @@ $(function(){
 	            // dataType: "text",
 	            data: { 
 	            	action: 'Delete', 
-	            	CalendarId: item.CalendarId 
+	            	PackagesId: item.PackagesId 
 	            },
 	         	success: function (data) {
 	         		if (data.IsOk) 

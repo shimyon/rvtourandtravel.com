@@ -2,6 +2,11 @@
 	<html class="no-js">
 		<head>
 			<?php include('support/head.php'); ?>
+			<style type="text/css">
+				li {
+					line-height: 35px;
+				}
+			</style>
 		</head>
 		<body>	
 			<!-- start header -->
@@ -39,6 +44,7 @@
 							<div class="tab-content" id="myTabContent">
 							  <div class="tab-pane fade show active" id="flight" role="tabpanel" aria-labelledby="flight-tab">
 								<div class="form-wrap">
+									<input type="text" class="form-control" name="Phone" id ="FlightPhone" placeholder="Phone " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'">
 									<input type="text" class="form-control" name="Email" id ="FlightEmail" placeholder="Email " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email '">									
 									<input type="text" class="form-control" name="name" id ="FlightFrom" placeholder="From " onfocus="this.placeholder = ''" onblur="this.placeholder = 'From '">									
 									<input type="text" class="form-control" name="to" placeholder="To " id ="FlightTo"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'To '">
@@ -50,6 +56,7 @@
 							  </div>
 							  <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">
 								<div class="form-wrap">
+									<input type="text" class="form-control" name="Phone" id ="HotelPhone" placeholder="Phone " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'">
 									<input type="text" class="form-control" name="Email" id ="HotelEmail" placeholder="Email " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email '">	
 									<input type="text" class="form-control" name="HotelName"id ="HotelName"  placeholder="Hotel Name " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Hotel Name '">				
 									<input type="text" class="form-control date-picker" name="start" placeholder="Start " id ="HotelStart"onfocus="this.placeholder = ''" onblur="this.placeholder = 'Start '">
@@ -61,6 +68,7 @@
 							  </div>
 							  <div class="tab-pane fade" id="holiday" role="tabpanel" aria-labelledby="holiday-tab">
 								<div class="form-wrap">
+									<input type="text" class="form-control" name="Phone" id ="HolidayPhone" placeholder="Phone " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'">
 									<input type="text" class="form-control" name="Email" id ="HolidayEmail" placeholder="Email " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email '">	
 									<input type="text" class="form-control" name="Plcace"id ="HolidayPlace"  placeholder="Place " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Place '">								
 									<input type="text" class="form-control date-picker" name="start"id ="HolidayStart"  placeholder="Start " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Start '">
@@ -77,8 +85,44 @@
 			</section>
 			<!-- End banner Area -->
 
+			<!-- Start about-info Area --> 
+			<section class="about-info-area section-gap" style="padding-top: 50px; color: #792917;">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6 info-left" style="display: none;">
+							<img class="img-fluid" src="img/about/info-img.jpg" alt="">
+						</div>
+						<div class="col-lg-12 info-right" >
+							<h1 style="text-align: center;">Brief Company Information</h1>
+							<ul style="font-size: 20px;" class="noglob">
+								<li>Our company place great importance on operating staff and transportation. Using the high qualities and placing tour guide efficiently well organising scheduling system which enable to maximize our customer ‘s convince</li>
+								<li>Our company RV Tours and Travel was established on April’2017. Formerly known as Ambe Travels which was established on August’2014.</li>
+								<li>License holder of EDPL group of companies (Govt. Approved)</li>
+								<li>
+									We are into various services 
+									<ul style="font-size: 20px;" class="noglob">
+										<li>Government department as a contract/tender.</li>
+										<li>Government car rental service and LTC service.</li>
+										<li>All Tour Packages of domestic and international Corporate and commercial.</li>
+										<li> Car rental service for wedding, corporate, local etc.</li>
+										<li>Air Ticket (IATA)</li>
+										<li>Railway Ticket (IRCTC. Govt. Approved).</li>
+										<li>Booking – Hotels Corporate parties, conference meeting, birthday parties, wedding.</li>
+										<li>Travel Insurance and Forex exchange.</li>
+							 		</ul>
+							 	</li>
+							 	<li>
+								We want to give our best services and nothing less. Allow us this opportunities to present our company profile in more details so that you may get to know us better.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End about-info Area --> 
+
 			<!-- Start popular-destination Area -->
-			<section class="popular-destination-area section-gap">
+			<section class="popular-destination-area section-gap1">
 				<div class="container">
 		            <div class="row d-flex justify-content-center">
 		                <div class="menu-content pb-70 col-lg-8">
@@ -134,7 +178,7 @@
 			<!-- End popular-destination Area -->
 
 			<!-- Start blog Area -->
-			<section class="recent-blog-area section-gap">
+			<section class="recent-blog-area section-gap2">
 				<div class="container">
 					<div class="row d-flex justify-content-center">
 						<div class="menu-content pb-60 col-lg-9">
@@ -340,6 +384,7 @@
 
 				data.subject = sel;
 				data.email = $("#" + sel + "Email").val();
+				data.phone = $("#" + sel + "Phone").val();
 				data.FlightFrom = $("#" + sel + "From").val();
 				data.FlightTo = $("#" + sel + "To").val();
 				data.FlightAdults = $("#" + sel + "Adults").val();
