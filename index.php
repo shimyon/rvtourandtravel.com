@@ -85,7 +85,7 @@
 			</section>
 			<!-- End banner Area -->
 
-			<!-- Start about-info Area --> 
+			<!-- Start about-info Area -->
 			<section class="about-info-area section-gap" style="padding-top: 50px; color: #792917;">
 				<div class="container">
 					<div class="row align-items-center">
@@ -122,7 +122,7 @@
 			<!-- End about-info Area --> 
 
 			<!-- Start popular-destination Area -->
-			<section class="popular-destination-area section-gap1">
+			<section class="popular-destination-area section-gap">
 				<div class="container">
 		            <div class="row d-flex justify-content-center">
 		                <div class="menu-content pb-70 col-lg-8">
@@ -178,7 +178,7 @@
 			<!-- End popular-destination Area -->
 
 			<!-- Start blog Area -->
-			<section class="recent-blog-area section-gap2">
+			<section class="recent-blog-area section-gap">
 				<div class="container">
 					<div class="row d-flex justify-content-center">
 						<div class="menu-content pb-60 col-lg-9">
