@@ -39,6 +39,12 @@
 				.divvspace {
 					margin-bottom: 20px;
 				}
+			
+				.fc-day-sat, .fc-day-sun { 
+					color: #ffffff;
+				    border-color: black;
+				    background-color: #009688;
+				}
 			</style>
 		</head>
 		<body>	

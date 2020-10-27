@@ -1,14 +1,12 @@
 <header id="header">
-    <div class="header-top" style="display: none;">
+    <div class="header-top">
         <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-sm-6 col-6 header-top-left">
-                <!--
-				<ul>
-                    <li><a href="#">Visit Us</a></li>
-                    <li><a href="#">Buy Tickets</a></li>
+                <ul>
+                    <li><a href="mailto:rvtoursandtravels00@gmail.com"><i class="fa fa-envelope-o"></i> rvtoursandtravels00@gmail.com</a></li>
+                    <li><a href="tel:+919574144212"><i class="fa fa-phone"></i> +919574144212</a></li>
                 </ul>
-				-->
             </div>
             <div class="col-lg-6 col-sm-6 col-6 header-top-right">
                 <div class="header-social">
@@ -21,7 +19,7 @@
         </div>			  					
         </div>
     </div>
-    <div class=" main-menu"> <!-- container -->
+    <div class="main-menu" style="padding-top: 10px;"> <!-- container -->
         <div class="row align-items-center justify-content-between d-flex">
             <div id="logo">
                 <a href="/"><img src="img/logo.png" alt="" title="" /></a>

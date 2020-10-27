@@ -1,4 +1,4 @@
-var appVersion = 1001;
+var appVersion = 1002;
 $(document).ready(function() {
     "use strict";
 
